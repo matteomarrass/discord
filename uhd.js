@@ -67,7 +67,27 @@ Create a function called calcArea:
     Pass the radius to the function.
     Calculate the area based on the radius, and output "The area is NN". 
 
-Problem 2
+
+    */
+
+/*const calcCircumfrence = (radius) => {
+    const circumference = (2 * radius) * 3.14;
+    console.log(`The circumference is ${circumference}`)
+}
+calcCircumfrence(3);
+
+const calcArea = (radius) => {
+    const area = 3.14 * Math.pow(radius, 2);
+    console.log(`The area is ${area}.`)
+}
+
+calcArea(3)
+*/
+
+
+
+
+/*Problem 2
 
 The Temperature Converter
 
@@ -81,9 +101,57 @@ Create a function called celsiusToFahrenheit:
 Create a function called fahrenheitToCelsius:
 
     Now store a fahrenheit temperature into a variable.
-    Convert it to celsius and output "NN°F is NN°C." */
+    Convert it to celsius and output "NN°F is NN°C."
+*/
+
+/*const celsiusToFahrenheit = () => {
+    let celsius = 30;
+    const converterFahrenheit = (celsius * 1.8) + 32;
+    console.log(`${celsius}°C is ${converterFahrenheit}°F.`)
+}
+celsiusToFahrenheit();
+
+const fahrenheitToCelsius = () => {
+    let fahrenheit = 70;
+    const converterCelsius = (fahrenheit - 32) / 1.8;
+    console.log(`${fahrenheit}°F is ${converterCelsius}°C.`)
+}
+
+fahrenheitToCelsius();
+*/
 
 
 //WEBSITE
 
     // https://www.w3resource.com/javascript-exercises/javascript-functions-exercises.php
+
+
+//    Write a JavaScript function that reverse a number. Go to the editor
+//    Example x = 32243;
+//    Expected Output : 34223
+
+const reverseNumber = (number) => {
+    let num = number;
+    let rev_num = 0;
+    if(num > 0) {
+        rev_num = rev_num *10 + num %10;
+        num = num /10;
+    } else {
+        return rev_num;
+    }
+}
+
+console.log(reverseNumber(32243));
+
+/*num = 4562 
+rev_num = 0
+rev_num = rev_num *10 + num%10 = 2 
+num = num/10 = 456
+rev_num = rev_num *10 + num%10 = 20 + 6 = 26 
+num = num/10 = 45
+rev_num = rev_num *10 + num%10 = 260 + 5 = 265 
+num = num/10 = 4
+rev_num = rev_num *10 + num%10 = 2650 + 4 = 2654 
+num = num/10 = 0 
+source- https://www.geeksforgeeks.org/write-a-program-to-reverse-digits-of-a-number/
+*/

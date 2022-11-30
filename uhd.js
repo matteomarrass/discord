@@ -130,7 +130,7 @@ fahrenheitToCelsius();
 //    Example x = 32243;
 //    Expected Output : 34223
 
-const reverseNumber = (number) => {
+/* TEST const reverseNumbera = (number) => {
     let num = number;
     let rev_num = 0;
     while (num > 0) {
@@ -141,9 +141,9 @@ const reverseNumber = (number) => {
     
 }
 
-console.log(reverseNumber(32243));
 
-/*num = 4562 
+
+num = 4562 
 rev_num = 0
 rev_num = rev_num *10 + num%10 = 2 
 num = num/10 = 456
@@ -154,4 +154,29 @@ num = num/10 = 4
 rev_num = rev_num *10 + num%10 = 2650 + 4 = 2654 
 num = num/10 = 0 
 source- https://www.geeksforgeeks.org/write-a-program-to-reverse-digits-of-a-number/
+
+
+
+CORRECT
+
+const reverseNumber = (number) => {
+    return String(number).split('').reverse('').join('');
+}
+
+console.log(reverseNumbera(1322439));
+
+-------correct--------
+let num = 32243;
+const reverseNumber = (num) => {
+  let rev_num = 0;
+  while (num > 0) {
+    rev_num = rev_num * 10 + (num % 10);
+    num = Math.floor(num / 10);
+  }
+  return rev_num;
+};
+
+console.log(reverseNumber(num));
 */
+
+// https://www.w3resource.com/javascript-exercises/javascript-functions-exercises.php

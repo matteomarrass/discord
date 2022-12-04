@@ -180,3 +180,58 @@ console.log(reverseNumber(num));
 */
 
 // https://www.w3resource.com/javascript-exercises/javascript-functions-exercises.php
+
+
+//Write a JavaScript function that checks whether a passed string is palindrome or not?
+//A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.
+
+/*const palindrome = (string) => {
+    const splitPalindrome = string.split('').reverse('').join('');
+    if (string === splitPalindrome){
+        return true
+    } else {
+        return false
+    }
+}
+
+console.log(palindrome('madam'))*/
+
+//Write a JavaScript function that generates all combinations of a string.
+//Example string : 'dog'
+//Expected Output : d,do,dog,o,og,g 
+
+/*const generateCombinations = (string) => {
+    let combinations = [];
+    for (let i = 0; i < string.length; i++ ) {
+         for(let j = i + 1; j < string.length + 1; j++) {
+            combinations.push(string.slice(i, j));
+         }
+    }
+  return combinations;
+}
+
+console.log(generateCombinations('dog'))*/
+
+//Write a JavaScript function that returns a passed string with letters in alphabetical order.
+//Example string : 'webmaster'
+//Expected Output : 'abeemrstw'
+
+//toCharArray()
+//const changeOrder = (string) => {
+//    const alphabeticalOrder = string.split('').sort().join('');
+//    return alphabeticalOrder
+//}
+//
+//console.log(changeOrder('method'))
+
+//Write a JavaScript function that accepts a string as a parameter and converts the first letter of
+//each word of the string in upper case.
+//Example string : 'the quick brown fox'
+//Expected Output : 'The Quick Brown Fox '
+
+const capitalizeFirst = (string) => {
+    let separatedWords = string.trim().split(" ");
+    separatedWords.forEach(element => element.charAt(0).toUpperCase() + element.slice(1).toLowerCase());
+}
+
+console.log(capitalizeFirst("ciao mi chiamo Matteo"));

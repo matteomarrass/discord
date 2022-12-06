@@ -249,4 +249,31 @@ console.log(generateCombinations('dog'))*/
 
 console.log(checkPrimeNumber(10))*/
 
+/*Write a JavaScript function which accepts an argument and returns the type.
+Note : There are six possible values that typeof returns: object, boolean,
+function, number, string, and undefined.*/
 
+/*const dataType = (data) => {
+    console.log(typeof data);
+}
+dataType(true)*/
+
+/*Write a JavaScript function which will take an array of numbers stored
+and find the second lowest and second greatest numbers, respectively.
+Sample array : [1,2,3,4,5]
+Expected Output : 2,4 */
+
+const secGreatest = () => {
+    const newArray = [1,8,2,4,5];
+    newArray.sort(function (a, b) {
+        return b - a;
+      });
+    const secondBiggest = newArray[1];
+    newArray.sort(function (a, b) {
+        return a - b;
+    });
+    const secondSmallest = newArray[1];
+    console.log(`${secondBiggest}, ${secondSmallest}`)
+}
+
+secGreatest();

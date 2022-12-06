@@ -229,9 +229,24 @@ console.log(generateCombinations('dog'))*/
 //Example string : 'the quick brown fox'
 //Expected Output : 'The Quick Brown Fox '
 
-const capitalizeFirst = (string) => {
-    let separatedWords = string.trim().split(" ");
-    separatedWords.forEach(element => element.charAt(0).toUpperCase() + element.slice(1).toLowerCase());
+//const capitalizeFirst = (string) => {
+//    let separatedWords = string.trim().split(" ");
+//    separatedWords.forEach(element => element.charAt(0).toUpperCase() + element.slice(1).toLowerCase());
+//}
+//
+//console.log(capitalizeFirst("ciao mi chiamo Matteo"));
+
+//Write a JavaScript function that accepts a number as a parameter and check the number is prime or not.
+//Note : A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+
+/*const checkPrimeNumber = (num) => {
+    for (let i = 2; i < num; i++){
+        if ( num % i == 0){
+            return 'Not a prime number!'
+        } return 'Yes, a prime number!'
+    }
 }
 
-console.log(capitalizeFirst("ciao mi chiamo Matteo"));
+console.log(checkPrimeNumber(10))*/
+
+

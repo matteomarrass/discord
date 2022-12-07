@@ -263,7 +263,7 @@ and find the second lowest and second greatest numbers, respectively.
 Sample array : [1,2,3,4,5]
 Expected Output : 2,4 */
 
-const secGreatest = () => {
+/*const secGreatest = () => {
     const newArray = [1,8,2,4,5];
     newArray.sort(function (a, b) {
         return b - a;
@@ -276,4 +276,84 @@ const secGreatest = () => {
     console.log(`${secondBiggest}, ${secondSmallest}`)
 }
 
-secGreatest();
+secGreatest();*/
+
+//Write a JavaScript program to list the properties of a JavaScript object.
+//Sample object:
+//var student = {
+//name : "David Rayy",
+//sclass : "VI",
+//rollno : 12 };
+//Sample Output: name,sclass,rollno
+
+/*const matteo = {
+    name: 'Matteo',
+    years: 23,
+    school: 'computer science'
+}
+
+console.log(`${matteo.name}, ${matteo.years}, ${matteo.school}`)*/
+
+/*Write a JavaScript program to delete the rollno property from the following object.
+Also print the object before or after deleting the property.
+Sample object:
+var student = {
+name : "David Rayy",
+sclass : "VI",
+rollno : 12 };*/
+/*const matteo = {
+    name: 'Matteo',
+    years: 23,
+    school: 'computer science'
+}
+console.log(matteo.name);
+delete matteo.name;
+console.log(matteo.name);*/
+
+/*Write a JavaScript program to get the length of a JavaScript object.
+Sample object :
+var student = {
+name : "David Rayy",
+sclass : "VI",
+rollno : 12 };*/
+/*const matteo = {
+    name: 'Matteo',
+    years: 23,
+    school: 'computer science'
+}
+const objectLenght = Object.keys(matteo).length;
+console.log(objectLenght)*/
+
+/*Write a JavaScript program to display the reading status (i.e. display book name, author name and reading status)
+of the following books.*/
+
+/*const library = [ 
+   {
+       author: 'Bill Gates',
+       title: 'The Road Ahead',
+       readingStatus: true
+   },
+   {
+       author: 'Steve Jobs',
+       title: 'Walter Isaacson',
+       readingStatus: true
+   },
+   {
+       author: 'Suzanne Collins',
+       title:  'Mockingjay: The Final Book of The Hunger Games', 
+       readingStatus: false
+   }];
+
+   library.forEach(book => {
+    for(let item in book){
+        console.log(`${item}: ${book[item]}`)
+    }
+})*/
+
+/*Write a Bubble Sort algorithm in JavaScript. Go to the editor
+Note : Bubble sort is a simple sorting algorithm that works by
+repeatedly stepping through the list to be sorted,
+Sample Data: [6,4,0, 3,-2,1]
+Expected Output : [-2, 0, 1, 3, 4, 6]*/
+
+//Exercises from https://www.w3resource.com/javascript-exercises/javascript-conditional-statements-and-loops-exercises.php

@@ -357,3 +357,26 @@ Sample Data: [6,4,0, 3,-2,1]
 Expected Output : [-2, 0, 1, 3, 4, 6]*/
 
 //Exercises from https://www.w3resource.com/javascript-exercises/javascript-conditional-statements-and-loops-exercises.php
+
+//Write a JavaScript program that accept two integers and display the larger.
+/*const larger = () => {
+    const numbers = [1, 3, 5, 10, 10000];
+    const largestNumber = Math.max(...numbers);
+    console.log(largestNumber);
+}
+
+larger();*/
+
+//Write a JavaScript conditional statement to find the sign of
+//product of three numbers. Display an alert box with the specified sign
+//Sample numbers : 3, -7, 2
+//Output : The sign is - 
+
+/*const minusSign = () => {
+    const arraySign = [3, 9, 39, 103];
+    const productArrays = arraySign.reduce((acc, current) => acc * current)
+    console.log(productArrays)
+}
+
+minusSign();*/
+

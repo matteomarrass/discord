@@ -380,3 +380,69 @@ larger();*/
 
 minusSign();*/
 
+//Print only the ODD values from 3 - 29, one number per line.
+
+/*const oddValues = () => {
+    for(let i = 3; i <= 30; i++){
+        if(!(i % 2 === 0)){
+            console.log(i)
+        }
+    }
+}
+
+oddValues();*/
+
+/*Construct a for loop that sorts the array [2, 3, 13, 18, -5, 38, -10, 11, 0, 104]
+into two new arrays:
+Define an empty evens array to hold the even numbers and an odds array for the odd numbers.
+In the loop, determine if each number is even or odd, then put that number into evens or odds,
+as appropriate.
+Print the arrays to confirm the results. Print evens first. Example: console.log(evens);*/
+
+/*const checkOddsOrEven = () => {
+    const allNumbers = [2, 3, 13, 18, -5, 38, -10, 11, 0, 104];
+    let odds = [];
+    let even = [];
+    for (let num = 0; num < allNumbers.length; num++){
+        if (allNumbers[num] % 2 === 0){
+            even.push(allNumbers[num])
+        } else {
+            odds.push(allNumbers[num])
+        }
+    }
+    console.log(even)
+    console.log(odds)
+}
+
+checkOddsOrEven();*/
+
+/*Construct while loops to do the following:
+
+    Prompt the user to enter the starting fuel level. The loop should continue until the user
+    enters a positive value greater than 5000 but less than 30000.
+    Use a second loop to query the user for the number of astronauts (up to a maximum of 7).
+    Validate the entry by having the loop continue until the user enters an integer from 1 - 7.
+    Use a final loop to monitor the fuel status and the altitude of the shuttle. Each iteration,
+    decrease the fuel level by 100 units for each astronaut aboard. Also, increase the altitude by
+    50 kilometers. (Hint: The loop should end when there is not enough fuel to boost the crew
+    another 50 km, so the fuel level might not reach 0).*/
+
+const shuttleCheck = () => {
+    let fuelLevel = prompt('What is your fuel level?');
+    let passengers = prompt('Passengers? (max 7)');
+    while(fuelLevel > 5000 || fuelLevel < 30000){
+        if (fuelLevel){
+            console.log(fuelLevel)
+            break;
+        }
+        while(passengers < 0 || passengers < 8){
+            if(passengers){
+                console.log(passengers);
+                break;
+            }
+        }
+    }
+}
+
+
+shuttleCheck()

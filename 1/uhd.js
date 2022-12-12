@@ -427,22 +427,61 @@ checkOddsOrEven();*/
     50 kilometers. (Hint: The loop should end when there is not enough fuel to boost the crew
     another 50 km, so the fuel level might not reach 0).*/
 
-const shuttleCheck = () => {
-    let fuelLevel = prompt('What is your fuel level?');
-    let passengers = prompt('Passengers? (max 7)');
-    while(fuelLevel > 5000 || fuelLevel < 30000){
-        if (fuelLevel){
-            console.log(fuelLevel)
-            break;
-        }
-        while(passengers < 0 || passengers < 8){
-            if(passengers){
-                console.log(passengers);
-                break;
-            }
-        }
+//const shuttleCheck = () => {
+//    let fuelLevel = prompt('What is your fuel level?');
+//    let passengers = prompt('Passengers? (max 7)');
+//    while(fuelLevel > 5000 || fuelLevel < 30000){
+//        if (fuelLevel){
+//            console.log(fuelLevel)
+//            break;
+//        }
+//        while(passengers < 0 || passengers < 8){
+//            if(passengers){
+//                console.log(passengers);
+//                break;
+//            }
+//        }
+//    }
+//}
+//
+//
+//shuttleCheck()
+
+/*Keep track of which books you read and which books you want to read!
+
+    Create an array of objects, where each object describes a book and has properties for the title
+    (a string), author (a string), and alreadyRead (a boolean indicating if you read it yet).
+    Iterate through the array of books. For each book, log the book title and book author
+    like so: "The Hobbit by J.R.R. Tolkien".
+    Now use an if/else statement to change the output depending on whether you read it yet or not.
+    If you read it, log a string like 'You already read "The Hobbit" by J.R.R. Tolkien', and if not,
+    log a string like
+    'You still need to read "The Lord of the Rings" by J.R.R. Tolkien.' */
+
+/*const books = [
+    {
+        title: 'Divina Commedia',
+        author: 'Dante Alighieri',
+        alreadyRead: false
+    },
+    {
+        title: 'Fight Club',
+        author: 'Chuck Palahniuk',
+        alreadyRead: true
+    },
+    {
+        title: 'Code: The Hidden Language',
+        author:'Charles Petzold',
+        alreadyRead: true
+    }
+]
+for(let i = 0; i < books.length; i++){
+    const theBook = `${books[i].title} by ${books[i].author}`
+    if(books[i].alreadyRead){
+        console.log(`You already read ${theBook}`)
+    } else {
+        console.log(`You still have to read ${theBook}`)
     }
 }
+*/
 
-
-shuttleCheck()
